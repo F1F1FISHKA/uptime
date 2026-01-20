@@ -37,7 +37,6 @@ sites:
     check: tcp-ping
     url: 95.181.162.169
     port: 22
-  - 
 
   - name: Node n-01
     check: tcp-ping
