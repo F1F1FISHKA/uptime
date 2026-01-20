@@ -36,7 +36,7 @@ sites:
   - name: Node n-01
     check: tcp-ping
     url: ping.n-01.zov.tatar
-    port: 22
+    port: 2022
 
   - name: Node n-02
     check: tcp-ping
