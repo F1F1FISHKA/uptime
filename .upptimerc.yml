@@ -2,9 +2,46 @@
 owner: F1F1FISHKA # Your GitHub organization or username, where this repository lives
 repo: uptime # The name of this repository
 
+
 sites:
-  - name: zov.tatar main page
+  # ===== 🌍 Основной сайт =====
+  - name: ZTorch LABS — Main Site
     url: https://zov.tatar
+
+  # ===== 🧭 Панель / Хостинг =====
+  - name: ZTorch LABS — Games dashboard
+    url: https://dash.zov.tatar
+
+  # ===== ☁️ Nextcloud =====
+  - name: ZTorch LABS — Cloud
+    url: https://data.zov.tatar
+
+  # ===== 📬 Почта =====
+  - name: Mail — SMTP
+    check: tcp-ping
+    url: mai.zov.tatar
+    port: 25
+
+  - name: Mail — IMAP SSL
+    check: tcp-ping
+    url: mai.zov.tatar
+    port: 993
+
+  # ===== 🖥 Инфраструктура / Ноды =====
+  - name: Main Node — IP
+    check: tcp-ping
+    url: 88.87.85.236
+    port: 22
+
+  - name: Node n-01
+    check: tcp-ping
+    url: ping.n-01.zov.tatar
+    port: 22
+
+  - name: Node n-02
+    check: tcp-ping
+    url: ping.n-02.zov.tatar
+    port: 22
 
 
 status-website:
@@ -14,11 +51,13 @@ status-website:
   # baseUrl: /your-repo-name
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Status | ZT LABS
-  introTitle: "ZT LABS | Если какой то из наших сервисов долго лежит, напишите админу (admin@zov.tatar)"
-  introMessage: Это страница статусов наших серверов
+  introTitle: "ZTorch LABS — Infrastructure Status"
+  introMessage: "Мониторинг всех сервисов, нод и инфраструктуры ZTorch LABS"
   navbar:
     - title: Status
       href: /
+    - title: Главная
+      href: https://zov.tatar
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
