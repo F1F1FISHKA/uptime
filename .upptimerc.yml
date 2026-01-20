@@ -19,12 +19,12 @@ sites:
   # ===== 📬 Почта =====
   - name: Mail — SMTP
     check: tcp-ping
-    url: mai.zov.tatar
+    url: mail.zov.tatar
     port: 25
 
   - name: Mail — IMAP SSL
     check: tcp-ping
-    url: mai.zov.tatar
+    url: mail.zov.tatar
     port: 993
 
   # ===== 🖥 Инфраструктура / Ноды =====
@@ -32,6 +32,12 @@ sites:
     check: tcp-ping
     url: 88.87.85.236
     port: 22
+    
+  - name: Node-02 — IP
+    check: tcp-ping
+    url: 95.181.162.169
+    port: 22
+  - 
 
   - name: Node n-01
     check: tcp-ping
