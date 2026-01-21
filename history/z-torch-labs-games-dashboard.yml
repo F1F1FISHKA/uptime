@@ -1,7 +1,7 @@
 url: https://dash.zov.tatar
-status: up
-code: 200
-responseTime: 1867
-lastUpdated: 2026-01-20T23:16:00.999Z
+status: down
+code: 502
+responseTime: 3856
+lastUpdated: 2026-01-21T11:21:40.482Z
 startTime: 2026-01-20T10:58:09.003Z
 generator: Upptime <https://github.com/upptime/upptime>
